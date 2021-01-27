@@ -2,8 +2,8 @@ const bgArray = ["/media/cardbg/redblack.jpg", "/media/cardbg/blueblack.jpg", "/
 const NameArrayMale = ["John","Adam","Mike","Bryon","Josh","Bryce","Jake","Zack","Tim"];
 const NameArrayFemale = ["Abby","Makenna","Gizelle","Sarah","Kimm","Tetra"];
 const LastArrayMale = ["Johnson","Smith","Ryder"];
-const GenderArray = ["Male","Female","other"];
-const ImgArray = ["",""];
+const GenderArray = ["Human - Male","Human - Female","other"];
+const ImgArray = ["/media/userImg/furry.jpg","/media/userImg/reptileman.jpg"];
 
 const otherArray = NameArrayMale.concat(NameArrayFemale);
 
@@ -93,7 +93,7 @@ subBtn.onclick = () => {
     nameDiv.className = "nameClass";
     genderDiv.className = "nameClass";
     ageDiv.className = "nameClass";
-    CharImg.className = "nameClass";
+    CharImg.className = "imgClass";
     abilDiv.className = "nameClass";
 
     const listTrees = () => {
@@ -110,6 +110,25 @@ subBtn.onclick = () => {
     nameDiv.textContent = nameInput;
     genderDiv.textContent = `Gender: ${genderInput}`;
     ageDiv.textContent = `Age: ${ageInput}`;
+    
+    switch(otherInput) {
+
+        case 'Furry' :
+        case 'furry' :
+        case 'furrie' :
+        case 'Furrie' :
+            CharImg.src = ImgArray[0];
+        break;
+        case 'reptile' :
+        case 'Reptile' :
+        case 'Lizard' :
+        case 'lizard' :
+        case 'lizardfolk' :
+        case 'Lizardfolk' :
+            CharImg.src = ImgArray[1];
+        break;
+
+    }
 
     // function showImage(src,CharImg) {
     //     var fr=new FileReader();

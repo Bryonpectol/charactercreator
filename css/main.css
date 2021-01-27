@@ -99,6 +99,13 @@ input {
     font-family: Helvetica, sans-serif;
 }
 
+.imgClass {
+    background-color: white;
+    margin: 1vh 4vh 0vh 4vh;
+    padding: 1vh;
+    width: 50%;
+}
+
 select {
     width: 40vh;
     height: 5vh;
