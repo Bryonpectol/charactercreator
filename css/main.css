@@ -35,6 +35,15 @@ main {
     text-align: center;
 }
 
+.h2 {
+    margin-top: 5vh;
+}
+
+hr {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 .bgSelect {
     /* background: url("/media/cardbg/redblack.jpg"); */
     width: 200px;
@@ -58,11 +67,36 @@ form {
     margin-top: 5vh;
 }
 
+.mainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#mainImg {
+    width: 50vh;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5vh;
+}
+
 input {
     width: 40vh;
     height: 5vh;
     padding: 1vh;
     margin: 2vh;
+}
+
+#abilDiv {
+    width: 45vh;
+    height: 25vh;
+}
+
+.nameClass {
+    background-color: white;
+    margin: 1vh 4vh 0vh 4vh;
+    padding: 1vh;
+    font-family: Helvetica, sans-serif;
 }
 
 select {

@@ -13,7 +13,7 @@
         <header>
             <nav>
                 <ul>
-                    <a class="nava" href=""><li>home</li></a>
+                    <a class="nava" href="https://charactercreator.netlify.app/"><li>home</li></a>
                     <a class="nava" href="/html/create.html"><li>Create!</li></a>
                     <a class="nava" href="/html/about.html"><li>About</li></a>
                     <a class="nava" href="/html/contact.html"><li>Contact Us</li></a>
@@ -23,7 +23,7 @@
 
         <main>
 
-            <h2>First, pick a background:</h2>
+            <h2 class="h2">First, pick a background:</h2>
 
             <button class="bgSelect" id="bgSelect1"></button>
             <button class="bgSelect" id="bgSelect2"></button>
@@ -32,9 +32,9 @@
 
             <hr />
 
-            <h2>Then, enter your character's information:</h2>
+            <h2 class="h2">Then, enter your character's information:</h2>
 
-            <h2>Or click random:</h2>
+            <h2 class="h2">Or click random:</h2>
             <button id="randomBtn">Random Character</button>
 
             <div id="formDiv">
@@ -44,16 +44,31 @@
 
                 <label>Gender:</label>
                 <select required name="gender" id="gender">
+                    <option></option>
                     <option>Female</option>
                     <option>Male</option>
                     <option id="optionOther">other</option>
                 </select>
 
+                <input type="text" name="otherName" id="otherDiv" placeholder="Other Gender:" />
+
                 <label>Age:</label>
                 <input required name="age" id="age" type="number" placeholder="0" />
 
-                <input type="button" value="Submit" />
+                <label>Abilities:</label>
+                <textarea name="abilities" id="abilDiv" type="text" placeholder="Separate abilities with ;" ></textarea>
+
+                <label>Character's Image if you want your own:</label>
+                <!-- <input type="file" accept="image/jpeg, image/png" name="file" id="userImg" /> -->
+
+                <input type="button" id="btn" value="Submit" />
             </form>
+            </div>
+
+            <div class="mainDiv">
+            <div id="mainImg">
+
+            </div>
             </div>
 
 
